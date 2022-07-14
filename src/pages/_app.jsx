@@ -2,13 +2,16 @@
 import React from "react";
 // layouts
 import Header from "@/layouts/Header";
+import PageContainer from "@/layouts/PageContainer";
 // others
 import "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }) => (
   <>
     <Header />
-    <Component {...pageProps} />
+    <PageContainer>
+      <Component {...pageProps} />
+    </PageContainer>
   </>
 );
 

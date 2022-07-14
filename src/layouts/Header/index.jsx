@@ -1,6 +1,6 @@
 // libs
 import React from "react";
 
-const Header = () => <header>Header</header>;
+const Header = () => <div>Header</div>;
 
 export default Header;
