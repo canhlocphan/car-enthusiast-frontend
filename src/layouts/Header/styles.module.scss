@@ -1,0 +1,16 @@
+.header-wrapper {
+  width: 100%;
+
+  &-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 175px;
+    height: 123px;
+  }
+
+  &-border {
+    height: 1px;
+    background-color: rgb(227, 228, 229);
+  }
+}

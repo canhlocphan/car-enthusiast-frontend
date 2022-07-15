@@ -1,6 +1,19 @@
+// libs
 import React from "react";
+// layouts
+import Header from "@/layouts/Header";
+import PageContainer from "@/layouts/PageContainer";
+// others
 import "../styles/globals.css";
+import "antd/dist/antd.css";
 
-const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;
+const MyApp = ({ Component, pageProps }) => (
+  <>
+    <Header />
+    <PageContainer>
+      <Component {...pageProps} />
+    </PageContainer>
+  </>
+);
 
 export default MyApp;

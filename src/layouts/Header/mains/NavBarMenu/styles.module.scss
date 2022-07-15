@@ -1,0 +1,12 @@
+.nav-bar-menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 21px 0px 0px 31px;
+
+  &-inner {
+    display: flex;
+    flex-direction: row;
+  }
+}

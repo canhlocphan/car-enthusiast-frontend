@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+module.exports = {
   reactStrictMode: true,
   swcMinify: true,
-}
-
-module.exports = nextConfig
+  images: {
+    domains: ["nav.porsche.com", "cdn.ui.porsche.com"],
+    minimumCacheTTL: 3153565,
+  },
+};
