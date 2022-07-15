@@ -1,4 +1,5 @@
 .nav-bar-item-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,10 +8,17 @@
 
   .nav-bar-item-wrapper-inner {
     height: 100px;
+
+    .nav-bar-item-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .nav-bar-item-text {
-    margin-top: -10px;
+    margin-top: -6px;
     text-align: center;
     font-size: 16px;
 
@@ -30,5 +38,12 @@
 
   &:hover {
     color: #d5001c;
+  }
+
+  &:active .nav-bar-item-overlay {
+    position: absolute;
+    width: 120px;
+    height: 102px;
+    border: 2px solid #d5001c;
   }
 }
